@@ -7,7 +7,6 @@ const withPWA = withPWAInit({
 });
 
 const nextConfig: NextConfig = {
-  // @ts-expect-error - silencing turbopack warning
   turbopack: {}
 };
 
