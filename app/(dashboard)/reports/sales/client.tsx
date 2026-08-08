@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import { API_URL } from "@/lib/api"
 import { ColumnDef } from "@tanstack/react-table"
 import { DataTable } from "@/components/ui/data-table"
 import { Button } from "@/components/ui/button"
@@ -173,7 +174,7 @@ export function SalesHistoryClient({ data }: { data: Sale[] }) {
         setIsLoading(true)
         try {
           const token = localStorage.getItem("token")
-          const res = await fetch(`http://localhost:3001/sales/${id}/cancel`, {
+          const res = await fetch(`${API_URL}/sales/${id}/cancel`, {
             method: "PUT",
             headers: {
               "Authorization": `Bearer ${token}`

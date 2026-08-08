@@ -300,7 +300,7 @@ export default function SalesClient({ initialProducts, users }: { initialProduct
         <div className="p-5 bg-gray-50 border-t flex flex-col gap-4">
           <div className="grid grid-cols-2 gap-3">
             <div className="flex flex-col gap-1">
-              <label className="text-xs font-medium text-gray-500 uppercase tracking-wider">Nama Pembeli (Opsional)</label>
+              <label className="text-xs font-medium text-gray-500 uppercase tracking-wider"> Pembeli</label>
               <Input 
                 placeholder="Misal: Budi"
                 value={buyerName}
@@ -309,7 +309,7 @@ export default function SalesClient({ initialProducts, users }: { initialProduct
               />
             </div>
             <div className="flex flex-col gap-1">
-              <label className="text-xs font-medium text-gray-500 uppercase tracking-wider">Catatan (Opsional)</label>
+              <label className="text-xs font-medium text-gray-500 uppercase tracking-wider">Catatan</label>
               <Input 
                 placeholder="Misal: Utang"
                 value={note}
