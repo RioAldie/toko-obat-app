@@ -1,6 +1,8 @@
 import { DashboardClient } from "./client"
 import { fetchApi } from "@/lib/api"
 
+export const dynamic = "force-dynamic"
+
 async function getStats() {
   try {
     const [products, categories, sales] = await Promise.all([
